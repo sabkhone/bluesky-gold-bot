@@ -25,4 +25,4 @@ jobs:
 
     - name: Run the bot
       run: |
-        nohup python app.py &  # اجرای سرور Flask در پس‌زمینه
+        nohup python bot.py &  # اجرای سرور Flask در پس‌زمینه
