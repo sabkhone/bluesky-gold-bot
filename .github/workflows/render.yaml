@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: bluesky-gold-bot
+    env: python
+    repo: https://github.com/sabkhone/bluesky-gold-bot
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
