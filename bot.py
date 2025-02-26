@@ -3,8 +3,8 @@ from flask import Flask, request
 from atproto import Client
 
 # تنظیمات بات
-BLUESKY_HANDLE = "corocodil.bsky.social"  # نام کاربری بلواسکای
-BLUESKY_APP_PASSWORD = "hprd-bw6c-wklq-tysk"  # رمز عبور مخصوص اپ (از تنظیمات بلواسکای بگیر)
+BLUESKY_HANDLE = os.getenv("BLUESKY_HANDLE")  # نام کاربری بلواسکای
+BLUESKY_APP_PASSWORD =  os.getenv("BLUESKY_APP_PASSWORD")  # رمز عبور مخصوص اپ (از تنظیمات بلواسکای بگیر)
 API_URL = "https://brsapi.ir/FreeTsetmcBourseApi/Api_Free_Gold_Currency_v2.json"  # API قیمت‌ها از brsapi.ir
 
 # راه‌اندازی کلاینت بلواسکای
