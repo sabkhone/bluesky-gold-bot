@@ -1,4 +1,5 @@
-﻿import requests
+import os
+import requests
 from flask import Flask, request
 from atproto import Client
 
